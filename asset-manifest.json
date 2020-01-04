@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/clicker-tutorial/static/css/main.8db9501f.chunk.css",
+    "main.js": "/clicker-tutorial/static/js/main.7da3a4f9.chunk.js",
+    "main.js.map": "/clicker-tutorial/static/js/main.7da3a4f9.chunk.js.map",
+    "runtime-main.js": "/clicker-tutorial/static/js/runtime-main.413ca7e5.js",
+    "runtime-main.js.map": "/clicker-tutorial/static/js/runtime-main.413ca7e5.js.map",
+    "static/js/2.7f067dca.chunk.js": "/clicker-tutorial/static/js/2.7f067dca.chunk.js",
+    "static/js/2.7f067dca.chunk.js.map": "/clicker-tutorial/static/js/2.7f067dca.chunk.js.map",
+    "index.html": "/clicker-tutorial/index.html",
+    "precache-manifest.2f524cba0f587831cfd0dffbe40fdf0b.js": "/clicker-tutorial/precache-manifest.2f524cba0f587831cfd0dffbe40fdf0b.js",
+    "service-worker.js": "/clicker-tutorial/service-worker.js",
+    "static/css/main.8db9501f.chunk.css.map": "/clicker-tutorial/static/css/main.8db9501f.chunk.css.map",
+    "static/js/2.7f067dca.chunk.js.LICENSE": "/clicker-tutorial/static/js/2.7f067dca.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.413ca7e5.js",
+    "static/js/2.7f067dca.chunk.js",
+    "static/css/main.8db9501f.chunk.css",
+    "static/js/main.7da3a4f9.chunk.js"
+  ]
+}
