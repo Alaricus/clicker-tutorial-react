@@ -6,11 +6,15 @@ body {
   user-select: none;
 }
 
-h1 {
-  display: inline-block;
+h2 {
+  margin-bottom: 0;
 }
 
-button {
+p {
+  margin-top: 0;
+}
+
+.buy {
   width: 12rem;
   margin-left: 1rem;
   padding: 0.5rem;
@@ -20,7 +24,16 @@ button {
   font-weight: bold;
   background-color: rgb(212, 212, 212);
   cursor: pointer;
-  outline:none;
+  outline: none;
+}
+
+.sell {
+  position: absolute;
+  left: 94%;
+  top: 50%;
+  border-color: red;
+  border-radius: 1rem;
+  outline: none;
 }
 
 .disabled {
@@ -36,6 +49,7 @@ button {
 }
 
 .clicker {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,3 +60,6 @@ button {
   border-radius: 1rem 0;
 }
 
+.info {
+  text-align: left;
+}

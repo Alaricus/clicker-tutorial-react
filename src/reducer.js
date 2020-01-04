@@ -17,6 +17,12 @@ const reducer = (state, action) => {
         [action.tier]: { ...state[action.tier], amount: state[action.tier].amount + 1 },
         clicks: { amount: state.clicks.amount - state[action.tier].cost },
       };
+    case 'decrease':
+      return {
+        ...state,
+        [action.tier]: { ...state[action.tier], amount: state[action.tier].amount - 1 },
+        clicks: { amount: state.clicks.amount + state[action.tier].cost },
+      };
     case 'update':
       return { ...state, clicks: { ...state.clicks, amount: action.payload } };
     default:

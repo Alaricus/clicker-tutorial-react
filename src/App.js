@@ -24,13 +24,19 @@ const App = () => {
   useEffect(() => {
     const interval = setInterval(() => callback.current(), 1000);
     return () => clearInterval(interval);
-  }, []);
+  }, [callback]);
 
   return (
     <div className="game">
       <div className="clicker">
         <h1>{state.clicks.amount}</h1>
-        <button type="button" onClick={() => dispatch({ type: 'click' })}>click button</button>
+        <button
+          className="buy"
+          type="button"
+          onClick={() => dispatch({ type: 'click' })}
+        >
+          click button
+        </button>
       </div>
       {
         Object.keys(state).map((tier, idx) => {
@@ -41,8 +47,10 @@ const App = () => {
               key={tier}
               tier={tier}
               amount={amount}
+              cost={cost}
               enabled={state.clicks.amount >= cost}
-              purchase={() => dispatch({ type: 'increase', tier })}
+              buy={() => dispatch({ type: 'increase', tier })}
+              sell={() => dispatch({ type: 'decrease', tier })}
             />
           );
         })
