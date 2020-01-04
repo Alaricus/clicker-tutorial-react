@@ -17,7 +17,6 @@ In order to keep the code as simple as possible, the following rules and assumpt
 ### Tech
 
 * This is written in React using hooks.
-* Since there are only 5 autoclickers `useState` is being used for each of the state variables. If the game should expand with more features and variables being introduced, it would make sense to use `useReducer` instead.
 * Since there is a single child component, relevant data is being passed as props. If the complexity of the app should increase to include many more components including nested ones, it would make sense to use `Context` with `useContext` hook, or a store such as Redux.
 * Only vanilla CSS is used.
 

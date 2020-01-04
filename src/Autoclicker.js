@@ -1,14 +1,14 @@
 import React from 'react';
 
-const Autoclicker = ({ type, amount, purchase, enabled }) => (
+const Autoclicker = ({ tier, amount, purchase, enabled }) => (
   <div className="clicker">
-    <h2>{`${amount} × ${type}clicker`}</h2>
+    <h2>{`${amount} × ${tier}clicker`}</h2>
     <button
       className={enabled ? undefined : 'disabled'}
       type="button"
       onClick={purchase}
     >
-      {`buy ${type}clicker`}
+      {`buy ${tier}clicker`}
     </button>
   </div>
 );
