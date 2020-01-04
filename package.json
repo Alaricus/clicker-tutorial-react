@@ -2,25 +2,30 @@
   "name": "clicker-tutorial",
   "version": "1.0.0",
   "private": true,
+  "homepage": "http://alaricus.github.io/clicker-tutorial",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
-    "@testing-library/user-event": "^8.0.2",
+    "@testing-library/user-event": "^8.0.3",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.0"
   },
   "devDependencies": {
-    "eslint": "^6.1.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-plugin-import": "^2.19.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.17.0",
-    "eslint-plugin-react-hooks": "^2.3.0"
+    "eslint-plugin-react-hooks": "^2.3.0",
+    "gh-pages": "^2.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
