@@ -14,12 +14,6 @@ In order to keep the code as simple as possible, the following rules and assumpt
 * There are only 5 levels of autoclickers.
 * There is no endgame of any kind.
 
-### Tech
-
-* This is written in React using hooks.
-* Since there is a single child component, relevant data is being passed as props. If the complexity of the app should increase to include many more components including nested ones, it would make sense to use `Context` with `useContext` hook, or a store such as Redux.
-* Only vanilla CSS is used.
-
 ## Development
 
 Install dependencies and run project
