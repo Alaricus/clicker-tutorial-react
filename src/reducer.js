@@ -1,5 +1,5 @@
 const initialState = {
-  clicks: { amount: 0 },
+  clicks: { amount: 100 },
   auto: { cost: 10, amount: 0 },
   double: { cost: 20, amount: 0 },
   mega: { cost: 100, amount: 0 },
@@ -24,7 +24,9 @@ const reducer = (state, action) => {
         clicks: { amount: state.clicks.amount + state[action.tier].cost },
       };
     case 'update':
-      return { ...state, clicks: { ...state.clicks, amount: action.payload } };
+      return (action.payload === state.clicks.amount)
+        ? state
+        : { ...state, clicks: { ...state.clicks, amount: action.payload } };
     default:
       throw new Error();
   }

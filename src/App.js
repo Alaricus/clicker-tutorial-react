@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useReducer } from 'react';
 
 import { reducer, initialState } from './reducer';
+import Clicker from './Clicker';
 import Autoclicker from './Autoclicker';
 
 const App = () => {
@@ -14,7 +15,8 @@ const App = () => {
         .reduce(
           (acc, cur, idx) => idx === 0
             ? acc
-            : acc + state[cur].amount * (state[cur].cost * 0.1), currentClics,
+            : acc + state[cur].amount * (state[cur].cost * 0.1),
+          currentClics,
         );
 
       dispatch({ type: 'update', payload: totalCount });
@@ -28,16 +30,7 @@ const App = () => {
 
   return (
     <div className="game">
-      <div className="clicker">
-        <h1>{state.clicks.amount}</h1>
-        <button
-          className="buy"
-          type="button"
-          onClick={() => dispatch({ type: 'click' })}
-        >
-          click button
-        </button>
-      </div>
+      <Clicker amount={state.clicks.amount} dispatch={dispatch} />
       {
         Object.keys(state).map((tier, idx) => {
           if (idx === 0) { return null; }
@@ -49,8 +42,7 @@ const App = () => {
               amount={amount}
               cost={cost}
               enabled={state.clicks.amount >= cost}
-              buy={() => dispatch({ type: 'increase', tier })}
-              sell={() => dispatch({ type: 'decrease', tier })}
+              dispatch={dispatch}
             />
           );
         })
