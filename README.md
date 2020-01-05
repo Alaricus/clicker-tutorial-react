@@ -2,11 +2,11 @@
 
 This is a very short and simple example of how to write an incrimental/idle (clicker) game.
 
-## Some assumptions
+Try it out here: [live version](https://alaricus.github.io/clicker-tutorial/)
 
-In order to keep the code as simple as possible, the following rules and assumptions are established:
+## Game Rules
 
-### Game Rules
+In order to keep the code as simple as possible, the following rules are established:
 
 * Each autoclicker always costs 10 times more than the amount it earns per tick.
 * The period between ticks is always 1 second long.
