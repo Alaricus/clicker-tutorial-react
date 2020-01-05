@@ -1,5 +1,5 @@
 const initialState = {
-  clicks: { amount: 100 },
+  clicks: { amount: 0 },
   auto: { cost: 10, amount: 0 },
   double: { cost: 20, amount: 0 },
   mega: { cost: 100, amount: 0 },

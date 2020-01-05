@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { memo } from 'react';
 
-const Autoclicker = React.memo(({ tier, amount, cost, dispatch, enabled }) => {
+const Autoclicker = memo(({ tier, amount, cost, dispatch, enabled }) => {
   const buy = () => dispatch({ type: 'increase', tier });
   const sell = () => dispatch({ type: 'decrease', tier });
 
