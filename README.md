@@ -33,7 +33,7 @@ npm start
 We can begin by outlining the idea of what we want to end up with. Since this is just a tutorial, we want to build a clicker game that:
 
 1. Allows a user to click a button to increment a counter
-2. Allows a user to buy autoclickers in increment a counter automatically
+2. Allows a user to buy autoclickers to increment a counter automatically
 3. Has several levels of autoclickers, each progressively more expensive and powerful
 
 We will inevitably find ourselves adding new features as we go, but it’s still good to have a list of the features that are absolutely required. For those curious to see the end result before diving in, here is a [working example](https://alaricus.github.io/clicker-tutorial/) of the game we are going to build. Here is the [source code](https://github.com/Alaricus/clicker-tutorial). The rest of the article will be an explanation of technical decisions that took us from a plan to the finished product.
@@ -43,7 +43,7 @@ We will inevitably find ourselves adding new features as we go, but it’s still
 To begin we’ll use [create-react-app](https://github.com/facebook/create-react-app) to create a blank React application.
 
 ### The State
-Our first order of business is to design a state variable, which will hold all of that data for us. This data should include a counter that increments when we click a button. Once we get to a high enough number of clicks, we will be able to spend them to buy autoclickers. Each autoclicker will, therefore, have a cost associated with it as well as the amount.
+Our first order of business is to design a state variable, which will hold all of our data for us. This data should include a counter that increments when we click a button. Once we get to a high enough number of clicks, we will be able to spend them to buy autoclickers. Each autoclicker will, therefore, have a cost associated with it as well as the amount.
 
 Let’s store all this data in an object like this:
 
@@ -67,8 +67,8 @@ As you can see we are importing our `initialState` as well as a `reducer` functi
 
 Our reducer will do the following for us:
 
-1. Given the `click` action it will simply increment the amount of clicks. So that `clicks: { amount: 0 }` becomes `clicks: { amount: 1 }`. The action object that triggers this only needs to contain a `type`, so it would look like this: `{ type: 'click' }` and would be dispatched like this: `dispatch({ type: 'click' }`.
-2. Given the `increase` action, it will increase the amount property of a given autoclicker and also decrease the amount of clicks by the cost of that particular autoclicker. The action object will, therefore, need to contain an action, and a tier. (Tier is just the name of a specific autoclicker we are addressing.) This action would look like this: `{ type: 'increase', tier: 'mega' }`.
+1. Given the `click` action it will simply increment the amount of clicks. So that `clicks: { amount: 0 }` becomes `clicks: { amount: 1 }`. The action object that triggers this only needs to contain a `type`, so it would look like this: `{ type: 'click' }` and would be dispatched like this: `dispatch({ type: 'click' })`.
+2. Given the `increase` action, it will increase the amount property of a given autoclicker and also decrease the amount of clicks by the cost of that particular autoclicker. The action object will, therefore, need to contain an action and a tier. (A tier is just a name of a specific autoclicker we are addressing.) This action would look like this: `{ type: 'increase', tier: 'mega' }`.
 3. Given the `update` action, it would update the amount of clicks with a tally of what all of the autoclickers had produced during a given cycle. This tally will be performed elsewhere, so we’ll just be passing a single number as the payload. Of course, if we have no atuoclickers and nothing was produced, we don’t need to update anything and can return the existing state. The action object would look like this: `{ type: 'update', payload: 10 }`
 
 Ok, now that we are done with the state management, let’s move on to our core game loop.
