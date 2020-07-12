@@ -30,6 +30,11 @@ const App = () => {
 
   return (
     <div className="game">
+      <div className="info">
+        This is an accompanying example to a clicker game tutorial using React. See
+        <a href="https://github.com/Alaricus/clicker-tutorial">GitHub</a>
+        for more details.
+      </div>
       <Clicker amount={state.clicks.amount} dispatch={dispatch} />
       {
         Object.keys(state).map((tier, idx) => {
