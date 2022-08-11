@@ -36,7 +36,7 @@ We can begin by outlining the idea of what we want to end up with. Since this is
 2. Allows a user to buy autoclickers to increment a counter automatically
 3. Has several levels of autoclickers, each progressively more expensive and powerful
 
-We will inevitably find ourselves adding new features as we go, but it’s still good to have a list of the features that are absolutely required. For those curious to see the end result before diving in, here is a [working example](https://alaricus.github.io/clicker-tutorial/) of the game we are going to build. Here is the [source code](https://github.com/Alaricus/clicker-tutorial). The rest of the article will be an explanation of technical decisions that took us from a plan to the finished product.
+We will inevitably find ourselves adding new features as we go, but it’s still good to have a list of the features that are absolutely required. For those curious to see the end result before diving in, here is a [working example](https://alaricus.github.io/clicker-tutorial-react/) of the game we are going to build. Here is the [source code](https://github.com/Alaricus/clicker-tutorial-react). The rest of the article will be an explanation of technical decisions that took us from a plan to the finished product.
 
 ## The Execution
 
