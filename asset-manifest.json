@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/clicker-tutorial-react/static/css/main.af44cc69.css",
-    "main.js": "/clicker-tutorial-react/static/js/main.46c05ed3.js",
+    "main.js": "/clicker-tutorial-react/static/js/main.4383db84.js",
     "index.html": "/clicker-tutorial-react/index.html",
     "main.af44cc69.css.map": "/clicker-tutorial-react/static/css/main.af44cc69.css.map",
-    "main.46c05ed3.js.map": "/clicker-tutorial-react/static/js/main.46c05ed3.js.map"
+    "main.4383db84.js.map": "/clicker-tutorial-react/static/js/main.4383db84.js.map"
   },
   "entrypoints": [
     "static/css/main.af44cc69.css",
-    "static/js/main.46c05ed3.js"
+    "static/js/main.4383db84.js"
   ]
 }
