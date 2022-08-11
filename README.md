@@ -3,6 +3,8 @@
 
 ## The Introduction
 
+**Update** [8/10/2022]: I now have a verstion of this tutorial with Solid instead of React and Typescript instead of JavaScript. [Take a look](https://github.com/Alaricus/clicker-tutorial-solid).
+
 Let’s say you get inspired by Cookie Clicker and decide to make your own game. Yea, this sort of stuff happens, believe it or not; it happened to me. In this article I’ll talk about the basics of building such a game and go over a relatively simple example of what a game like this might look like.
 
 In order to benefit the most from the code we will be looking over later in the article, it would be helpful if you were at least somewhat familiar with the following:
