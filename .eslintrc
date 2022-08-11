@@ -3,18 +3,17 @@
     "browser": true,
     "es6": true
   },
-  "extends": ["airbnb"],
-  "parser": "babel-eslint",
+  "extends": ["airbnb", "plugin:react/jsx-runtime"],
+  "parser": "@babel/eslint-parser",
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
   },
   "parserOptions": {
-      "ecmaFeatures": {
-          "jsx": true
-      },
-      "ecmaVersion": 2018,
-      "sourceType": "module"
+    "requireConfigFile": false,
+    "babelOptions": {
+      "presets": ["@babel/preset-react"]
+    }
   },
   "plugins": [
     "react",
@@ -42,6 +41,7 @@
     }],
     "react/prop-types": "off",
     "react-hooks/rules-of-hooks": "error",
+    "react/function-component-definition": [2, { "namedComponents": "arrow-function", "unnamedComponents": "arrow-function" }],
     "arrow-parens": ["error", "as-needed"]
   }
 }

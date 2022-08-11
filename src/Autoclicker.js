@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import { memo } from 'react';
 
 const Autoclicker = memo(({ tier, amount, cost, dispatch, enabled }) => {
   const buy = () => dispatch({ type: 'increase', tier });

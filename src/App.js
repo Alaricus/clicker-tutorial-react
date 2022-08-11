@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useReducer } from 'react';
+import { useEffect, useRef, useReducer } from 'react';
 
 import { reducer, initialState } from './reducer';
 import Clicker from './Clicker';

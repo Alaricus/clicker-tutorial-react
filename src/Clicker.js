@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Clicker = ({ amount, dispatch }) => (
   <div className="clicker">
     <h1>{amount}</h1>
