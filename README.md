@@ -7,8 +7,8 @@ Let’s say you get inspired by Cookie Clicker and decide to make your own game.
 
 In order to benefit the most from the code we will be looking over later in the article, it would be helpful if you were at least somewhat familiar with the following:
 
-1. JavaScript (we’ll be using ES2015 aka ES6 syntax)
-2. React (we’ll be using version 16.12, which includes hooks)
+1. JavaScript — we’ll be using ES2015 aka ES6 syntax
+2. React — we’ll be using version 18.2 (initially 16.12)
 
 While I will not go into great detail on everything, don’t worry, I will try to include as many relevant links as possible so that those who are new to this can have some reference material. Should you happen to come across a section that is unclear, there will be a link to bring you up to speed. If not, please let me know.
 

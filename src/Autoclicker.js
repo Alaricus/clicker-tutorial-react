@@ -7,8 +7,8 @@ const Autoclicker = memo(({ tier, amount, cost, dispatch, enabled }) => {
   return (
     <div className="clicker">
       <div className="info">
-        <h2>{`${amount} × ${tier}clicker`}</h2>
-        <p>{`this ${tier}clicker buys and sells for ${cost}`}</p>
+        <h2>{`${Intl.NumberFormat().format(amount)} × ${tier}clicker`}</h2>
+        <p>{`this ${tier}clicker buys and sells for ${Intl.NumberFormat().format(cost)}`}</p>
       </div>
       <button
         className={`buy ${enabled ? undefined : 'disabled'}`}

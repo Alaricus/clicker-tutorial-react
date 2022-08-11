@@ -1,6 +1,6 @@
 const Clicker = ({ amount, dispatch }) => (
   <div className="clicker">
-    <h1>{amount}</h1>
+    <h1>{Intl.NumberFormat().format(amount)}</h1>
     <button
       className="buy"
       type="button"
